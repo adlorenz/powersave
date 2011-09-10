@@ -1,0 +1,19 @@
+A script to enable laptop power saving features for #! & Debian GNU+linux.
+Generally speaking, this script should automatically switch powertop's 
+"Tunables" which proved to make significant impact in power consumption 
+while running on battery.
+
+Script originally created by hardran3 at:
+http://crunchbanglinux.org/forums/topic/11954
+
+Adjusted to own needs and github'ed by Dawid Lorenz / dawid@lorenz.co
+
+To make this script run each time laptop's power adapter is plugged in/out:
+sudo cp powersave /etc/pm/power.d/
+sudo chmod +x /etc/pm/power.d/powersave
+
+To run script manually:
+./powersave true|false
+
+Tested on Fedora 15, please review script and run it manually before putting
+under /etc/pm/power.d/
